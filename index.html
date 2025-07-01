@@ -504,157 +504,261 @@
     <img src="client_assets/assets/whatsapp.png" style="width:100%" alt="whatsapp">
   </a>
 </div>
+<style>
+/* Nav link base style */
+.nav > li > a {
+  color: #111 !important;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 14px;
+  transition: color 0.3s ease;
+}
 
-    <!-- Desktop Navigation -->
+.nav > li > a:hover {
+ 
+  text-decoration: none;
+}
+
+/* Button style for Registration */
+.register-link {
+  border: 2px solid #eab821;;
+  border-radius: 4px;
+  padding: 8px 16px !important;
+  color: #111 !important;
+  transition: all 0.3s ease;
+}
+
+.register-link:hover {
+  background-color: #eab821;
+  color: #fff !important;
+}
+
+/* Desktop / Mobile Visibility */
+@media (max-width: 768px) {
+  #show {
+    display: none !important;
+  }
+
+  #mobileshow {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  #mobileshow {
+    display: none !important;
+  }
+
+  #show {
+    display: block !important;
+  }
+}
+
+/* Remove gap between header and hero */
+header, nav {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#heroSlider {
+  margin-top: 0 !important;
+}
+
+</style>
+
 <div id="show">
-  <header id="mukam-header" class="mukam-header mukam-header-large header-4 fadein scaleInv anim_1">
-    <div class="top-section-container2">
-      <div class="top-section">
-        <div class="container"></div>
-      </div>
-    </div>
-
-    <div class="container" style="max-width: 1200px; padding: 0 15px;">
-      <div class="row">
-        <div class="col-md-12">
-         <nav class="navbar navbar-default" role="navigation"
-     style="background-color: #fff; border: none; margin: 0; padding: 0; box-shadow: 0px 1px 5px rgba(0,0,0,0.05);">
-
-  <div class="container-fluid"
-       style="padding: 0 30px; display: flex; align-items: center; justify-content: space-between;">
-
-    <!-- Logo -->
-    <div class="navbar-header" style="display: flex; align-items: left;">
-      <a href="index.html">
-        <img src="client_assets/img/logo1.png" alt="Shri Ram Music Class"
-     style="height: 100px; width: auto; display: block;">
-
-      </a>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar"
-              style="margin-left: 15px; margin-top: 10px;">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar" style="background-color: black;"></span>
-        <span class="icon-bar" style="background-color: black;"></span>
-        <span class="icon-bar" style="background-color: black;"></span>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="nav navbar-nav navbar-right"
-          style="display: flex; align-items: center; margin: 0; gap: 25px;">
-        <li><a href="#heroSlider" style="color: black; font-weight: bold; font-size: 16px;">Home</a></li>
-        <li><a href="#about" style="color: black; font-weight: bold; font-size: 16px;">About Us</a></li>
-        <li><a href="#course" style="color: black; font-weight: bold; font-size: 16px;">Courses</a></li>
-        <li><a href="#contact" style="color: black; font-weight: bold; font-size: 16px;">Contact Us</a></li>
-        <li><a href="#register" style="color: black; font-weight: bold; font-size: 16px;">Registration</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-        </div>
-      </div>
-    </div>
-  </header>
-</div>
-
-<!-- Mobile Navigation -->
-<div id="mobileshow">
-  <header id="mukam-header" class="mukam-header mukam-header-large header-4 fadein scaleInv anim_1">
-    <div class="top-section-container2">
-      <div class="top-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="max-width: 100%; padding: 0 15px;">
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="navbar navbar-default header-4" role="navigation"
-     style="background-color: #fff; border: none; margin: 0; padding: 5px 5px;">
-  <div class="navbar-header" style="display: flex; justify-content: space-between; align-items: left;">
-    <a href="index.html">
-      <img src="client_assets/img/logo1.png" alt="Shri Ram Music Class"
-           style="height: 150px; width: 200px; margin-bottom:-10px;">
-    </a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"
-            style="margin-right: 0;background-color: #fff;">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar" style="background-color: black;"></span>
-      <span class="icon-bar" style="background-color: black;"></span>
-      <span class="icon-bar" style="background-color: black;"></span>
-    </button>
-  </div>
-
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav navbar-right"
-        style="margin-top: 10px;">
-      <li><a href="#heroSlider" style="color: black; font-weight: bold; font-size: 16px;">Home</a></li>
-      <li><a href="#about" style="color: black; font-weight: bold; font-size: 16px;">About Us</a></li>
-      <li><a href="#course" style="color: black; font-weight: bold; font-size: 16px;">Courses</a></li>
-      <li><a href="#contact" style="color: black; font-weight: bold; font-size: 16px;">Contact Us</a></li>
-      <li><a href="#register" style="color: black; font-weight: bold; font-size: 16px;">Registration</a></li>
-    </ul>
-  </div>
-</nav>
-
-        </div>
-      </div>
-    </div>
-  </header>
-</div>
-
-    <!-- Header end -->
-
-    <section class="mukam-waypoint" data-animate-down="mukam-header-small header-4"
-      data-animate-up="mukam-header-large header-4">
-     
+  <header class="mukam-header" style="margin-bottom: 0;">
+    <nav class="navbar navbar-default" role="navigation"
+         style="background-color: #fff; border: none; margin: 0; padding: 0; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+      <div class="container-fluid"
+           style="max-width: 1200px; margin: auto; padding: 0 30px; display: flex; align-items: center; justify-content: space-between;">
         
+        <!-- Logo -->
+        <div class="navbar-header">
+          <a href="index.html">
+            <img src="client_assets/img/logo1.png" alt="Shri Ram Music Class" style="height: 130px; width: auto;">
+          </a>
+        </div>
 
-      <!--jssor slider-->
-
-    <!-- Hero Banner -->
-<!-- Hero Banner with Auto Slide (Fixed Version) -->
-<div id="heroSlider" style="position: relative; width: 100%; height: 100vh; margin-top:-20px;overflow: hidden; font-family: Georgia, serif;">
-
-  <!-- Slide 1 -->
-  <div style="position: absolute; width: 100%; height: 100%; background: url('client_assets/b2.jpg') center/cover no-repeat; opacity: 1; transition: opacity 1s;" class="slide"></div>
-
-  <!-- Slide 2 -->
-  <div style="position: absolute; width: 100%; height: 100%; background: url('client_assets/b1.jpg') center/cover no-repeat; opacity: 0; transition: opacity 1s;" class="slide"></div>
-
-  
-  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="nav navbar-nav navbar-right" style="display: flex; align-items: center; gap: 20px; margin: 0;">
+            <li><a href="#heroSlider">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#course">Courses</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#register" class="register-link">Registration</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 </div>
 
-<!-- Auto Slide JavaScript -->
+
+
+<div id="mobileshow">
+  <header class="mukam-header" style="margin-bottom: 0;">
+    <nav class="navbar navbar-default" role="navigation"
+         style="background-color: #fff; border: none; margin: 0; padding: 5px 10px;">
+      <div class="navbar-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <a href="index.html">
+          <img src="client_assets/img/logo1.png" alt="Shri Ram Music Class" style="height: 100px; width: auto;">
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"
+                style="background-color: #fff;">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar" style="background-color: black;"></span>
+          <span class="icon-bar" style="background-color: black;"></span>
+          <span class="icon-bar" style="background-color: black;"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+          <li><a href="#heroSlider">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#register" class="register-link">Registration</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+   <!-- 3-Banner Slider Section -->
+<div id="threeBannerSlider" class="slider-container">
+  <!-- Slides -->
+  <div class="slide" style="background-image: url('client_assets/222.png');"></div>
+  <div class="slide" style="background-image: url('client_assets/22222.png');"></div>
+  
+
+  <!-- Arrows -->
+  <div id="prevBanner" class="arrow left">&#10094;</div>
+  <div id="nextBanner" class="arrow right">&#10095;</div>
+</div>
+
+<!-- CSS -->
+<style>
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    font-family: Georgia, serif;
+    border-radius: 20px;
+   
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .arrow.left {
+    left: 20px;
+  }
+
+  .arrow.right {
+    right: 20px;
+  }
+
+  /* Mobile Style */
+  @media screen and (max-width: 768px) {
+    .slider-container {
+      height: 380px !important;
+    }
+
+    .slide {
+      height: 380px !important;
+      background-size: contain !important;
+    }
+  }
+</style>
+
+<!-- JavaScript -->
 <script>
-  const slides = document.querySelectorAll('#heroSlider .slide');
-  let currentSlide = 0;
-  setInterval(() => {
-    slides.forEach((slide, index) => {
-      slide.style.opacity = index === currentSlide ? '1' : '0';
+  const bannerSlides = document.querySelectorAll('#threeBannerSlider .slide');
+  const prevBtn = document.getElementById('prevBanner');
+  const nextBtn = document.getElementById('nextBanner');
+
+  let currentBanner = 0;
+  const totalBanners = bannerSlides.length;
+
+  function showBanner(index) {
+    bannerSlides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
     });
-    currentSlide = (currentSlide + 1) % slides.length;
-  }, 4000);
+  }
+
+  function nextBanner() {
+    currentBanner = (currentBanner + 1) % totalBanners;
+    showBanner(currentBanner);
+  }
+
+  function prevBanner() {
+    currentBanner = (currentBanner - 1 + totalBanners) % totalBanners;
+    showBanner(currentBanner);
+  }
+
+  // Initial show
+  showBanner(currentBanner);
+
+  // Auto slide every 4s
+  setInterval(nextBanner, 4000);
+
+  // Arrows
+  nextBtn.onclick = nextBanner;
+  prevBtn.onclick = prevBanner;
 </script>
+
+
+    
+    
+
+
 
 
 
       <!-- #endregion Jssor Slider End -->
       <!-- Services 5 -->
-      <div class="bg-color asset-bg" style=" background:white !important;padding-bottom: 0px;">
+      
         
        
 
-          <section style="padding: 60px 20px; background-color: #ffffff;">
-  <div style="display: flex; flex-wrap: wrap; max-width: 1400px; margin: auto; align-items: center; justify-content: space-between;">
+          <section style="padding: 40px 40px; background-color: #ffffff;margin-top:-150px;">
+  <div style="display: flex; flex-wrap: wrap; max-width: 1500px; margin: auto; align-items: center; justify-content: space-between;">
     
     <!-- Left Text -->
     <div style="flex: 1 1 50%; padding: 20px;">
@@ -677,7 +781,7 @@
 
     <!-- Right Image -->
     <div style="flex: 1 1 50%; position: relative; height: 600px; padding: 20px;">
-      <img src="client_assets/1.jpg" alt="Sheet Music"
+      <img src="client_assets/6.jpg" alt="Sheet Music"
         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
     </div>
 
@@ -691,7 +795,7 @@
 
             
 
-   <section id="about" style="background-color: #f7e6d0; padding: 40px 0;">
+   <section id="about" style="background-color: #e0aa2c; padding: 40px 0;margin-left:10px;margin-right:10px;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -710,7 +814,7 @@
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 0 20px 40px 20px;">
       
       <!-- Mission Card -->
-      <div style="background-color: #ffffff; border-radius: 10px; margin-right:50px; padding: 20px; width: 500px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <div style="background-color: #ffffff; border-radius: 10px; margin-right:10px; padding: 20px; width: 500px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
         <h3 style="color: #f4a024; text-align: center;">🎯 Mission</h3>
         <p style="line-height: 1.6; text-align: center; color: #333;">
           To inspire and empower individuals through music education rooted in Indian traditions. We aim to cultivate a lifelong passion for music by developing creativity, discipline, and emotional well-being through structured learning and performance opportunities.
@@ -732,7 +836,7 @@
 
        
 
-   <section style="background-color: #f7f6f2; padding: 60px 0;">
+   <section style=" padding: 60px 0;">
   <div class="container">
     <div class="row align-items-center">
 
@@ -747,7 +851,7 @@
 
       <!-- Intro Text (Right) -->
       <div class="col-md-6">
-        <div style="background-color: #fff; padding: 40px; border-left: 10px solid #f4a300; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <div style="background-color: white; padding: 40px; border-left: 10px solid #f4a300; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
           <h6 style="color: #a67c00; font-weight: bold; margin-bottom: 10px;">WELCOME TO</h6>
           <h2 style="font-size: 36px; color: #2c2c2c; font-weight: 700; margin-bottom: 20px;">Shri Ram Music Class</h2>
           <p style="font-size: 16px; color: #333; line-height: 1.8;">
@@ -775,7 +879,7 @@
       <!-- Left: Course Details -->
       <div class="col-md-6">
         <div style="background-color: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-          <h2 style="font-size: 30px; font-weight: bold; color: #c47200; margin-bottom: 25px;">
+          <h2 style="font-size: 30px; font-weight: bold; color: #e0aa2c; margin-bottom: 25px;">
             🎓 Courses Offered at Shri Ram Music Class
           </h2>
 
@@ -871,10 +975,10 @@
 
 
 <!-- Music Class Banners Section -->
-<section style="background-color: #fefae0; padding: 60px 20px; font-family: 'Segoe UI', sans-serif; text-align: center;">
+<section style="background-color: #e0aa2c; padding: 60px 20px; font-family: 'Segoe UI', sans-serif; text-align: center;">
 
   <h2 style="font-size: 42px; font-weight: bold; color: #2d1c16; margin-bottom: 10px;">Join Shri Ram Sangeet Vidyalaya</h2>
-  <p style="color: #b49c7a; font-size: 18px; margin-bottom: 40px;">Dedicated to Hindustani Classical & Instrumental Training</p>
+  <p style="color: black; font-size: 18px; margin-bottom: 40px;">Dedicated to Hindustani Classical & Instrumental Training</p>
 
   <!-- Two Banners Side-by-Side -->
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 40px;">
@@ -972,10 +1076,10 @@
 
 
 
-<div id="register" style="font-family: Georgia, serif; background-color: #f8f6f2; margin: 0; padding: 40px 20px; text-align: center;">
+<div id="register" style="font-family: Georgia, serif; background-color: #e0aa2c; margin: 0; padding: 40px 20px; text-align: center;">
 
   <h2 style="font-size: 60px; color: #2d1c16;">Online Application</h2>
-  <p style="color: #b49c7a; font-weight: bold;">SIGN UP FOR OUR MUSIC SCHOOL</p>
+  <p style="color: black; font-weight: bold;">SIGN UP FOR OUR MUSIC SCHOOL</p>
 
   <form id="applicationForm" onsubmit="sendWhatsApp(); return false;" style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
@@ -1014,7 +1118,7 @@
 
     <textarea id="comments" placeholder="Questions / Comments" style="flex: 1 1 100%; padding: 20px; border-radius: 30px; border: 1px solid #ccc; height: 150px;"></textarea>
 
-    <button type="submit" style="background-color: #eab821; border: none; color: #2d1c16; font-weight: bold; font-size: 16px; padding: 15px 40px; border-radius: 40px; cursor: pointer; margin-top: 10px;">
+    <button type="submit" style="background-color: white; border: none; color: #2d1c16; font-weight: bold; font-size: 16px; padding: 15px 40px; border-radius: 40px; cursor: pointer; margin-top: 10px;">
       SUBMIT FORM
     </button>
 
@@ -1054,21 +1158,8 @@
 <div id="contact" style="margin: 0; padding: 0; font-family: Georgia, serif; background-color: #fff;">
   <div style="display: flex; flex-wrap: wrap; max-width: 100%; padding: 40px 20px; box-sizing: border-box;">
 
-    <!-- Left: Google Map -->
-    <div style="flex: 1 1 100%; min-width: 300px; padding: 10px; box-sizing: border-box;">
-      <iframe 
-        src="https://www.google.com/maps?q=High+church+Road+Karwar+581301&output=embed" 
-        width="100%" 
-        height="400" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <!-- Right: Contact Info -->
-    <div style="flex: 1 1 100%; min-width: 200px; padding: 10px; text-align: left; box-sizing: border-box;">
+    <!-- Left: Contact Info -->
+    <div style="flex: 1 1 50%; min-width: 300px; padding: 10px; text-align: left; box-sizing: border-box;">
       <h1 style="font-size: 36px; margin-bottom: 10px; color: #2d2d2d; text-align: center;">Contact Us</h1>
       <p style="font-weight: bold; color: #b49c7a; margin-bottom: 30px; text-align: center;">CONTACT INFO</p>
 
@@ -1090,6 +1181,19 @@
         <h2 style="margin: 0 0 5px; font-size: 20px;">Email Address</h2>
         <p style="margin: 0; color: #e2b400; font-weight: bold;">udayshetti58@gmail.com</p>
       </div>
+    </div>
+
+    <!-- Right: Google Map -->
+    <div style="flex: 1 1 50%; min-width: 300px; padding: 10px; box-sizing: border-box;">
+      <iframe 
+        src="https://www.google.com/maps?q=High+church+Road+Karwar+581301&output=embed" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
   </div>
